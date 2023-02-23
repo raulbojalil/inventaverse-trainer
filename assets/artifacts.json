@@ -1,0 +1,177 @@
+[
+    {
+        "Index": 2,
+        "Name": "The Antidote",
+        "Type": 2,
+        "Description": "A masterfully mixed concentrated cocktail of Inceptium solution.\nActivate: Recover 6 health (30 second cooldown)\nPassive: Slowly regenerate health over time\nPassive: Total health increased by 2 \nPassive: Poison potions behave the same as healing potions when collected",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/2.png"
+    },
+    {
+        "Index": 3,
+        "Name": "A Compass",
+        "Type": 1,
+        "Description": "An unusual device that never seems to point in any particular direction at all.\nActivate: Teleport to a random location (25 second cooldown)\nPassive: Increase the area of effect of your incantations by 1 on all sides.",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/3.png"
+    },
+    {
+        "Index": 4,
+        "Name": "A Journal",
+        "Type": 1,
+        "Description": "A hand written journal.  As you turn the pages you notice that it begins again at the beginning and never seems to get any closer to the end.\nActivate: Teleport back to a spawn location (25 second cooldown)\nPassive: Increase the area of effect of your incantations by 1 on all sides.",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/4.png"
+    },
+    {
+        "Index": 5,
+        "Name": "An Inceptium Ring",
+        "Type": 2,
+        "Description": "Forged from the strange luminescent green metal inceptium, you can feel the power eminating from it as you study it in your hand.\nActivate: Fire a beam of concentrated energy (15 second cooldown)\nPassive: Initial weapon rank increased by 2",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/5.png"
+    },
+    {
+        "Index": 6,
+        "Name": "A Spy Glass",
+        "Type": 0,
+        "Description": "A beautifully crafted piece of optical equipment.\nActivate: Watch the world from afar\nPassive: Detect allies, enemies, and treasure in the minimap\nPassive: Increase the area of effect of your incantations by 2 on all sides.",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/6.png"
+    },
+    {
+        "Index": 7,
+        "Name": "A Pocket Watch",
+        "Type": 2,
+        "Description": "A classic 1950's time piece with the initials J.H. etched into the back cover.\nActivate: Slow other players for 6 seconds (45 second cooldown)\nPassive: Increase run speed\nPassive: Increase jump\nPassive: Increase the area of effect of your incantations by 1 on all sides.",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/7.png"
+    },
+    {
+        "Index": 8,
+        "Name": "The Black Talisman",
+        "Type": 1,
+        "Description": " A pitch black form, resembling a face, made from shadows staring back at you from the unreachable edge of infinity, truly a disturbing artifact.\nActivate: Plunge the world into darkness for 10 seconds (45 second cooldown)\nPassive: Slowly regenerate health over time\nPassive: Increase the area of effect of your incantations by 1 on all sides.",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/8.png"
+    },
+    {
+        "Index": 9,
+        "Name": "The Skeleton Key", 
+        "Type": 2,
+        "Description": "A hand carved key, able to open any lock.\nActivate: Exit a world without having collected the required treasure\nPassive: Bypass the lock on any treasure chest",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/9.png"
+    },
+    {
+        "Index": 10,
+        "Name": "The Red Talisman", 
+        "Type": 1,
+        "Description": "The furious image of an enraged face, you can sense the intensity within this object as it trembles in your hand.\nActivate: Cause an earth quake for 10 seconds (45 second cooldown)\nPassive: Slowly regenerate health over time\nPassive: Increase the area of effect of your incantations by 1 on all sides.",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/10.png"
+    },
+    {
+        "Index": 11,
+        "Name": "The White Talisman", 
+        "Type": 1,
+        "Description": "As you study this object, peace, balance and focus consume your senses.\nActivate: Heal a large amount of health over 10 seconds (30 second cooldown)\nPassive: Slowly regenerate health over time\nPassive: Total health increased by 2\nPassive: Increase the area of effect of your incantations by 1 on all sides.",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/11.png"
+    },
+    {
+        "Index": 12,
+        "Name": "A Can of Zapo Cola", 
+        "Type": 2,
+        "Description": "The classic taste of the multiverse's best hyper cola!\nActivate: Recover 6 health (30 second cooldown)\nPassive: Increase run speed\nPassive: Increase jump",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/12.png"
+    },
+    {
+        "Index": 13,
+        "Name": "The Aetherian Lantern", 
+        "Type": 1,
+        "Description": "An Aetherian artifact, the blazing light within it never burns out.\nActivate: Incinerate enemies with a powerful heat ray (20 second cooldown)\nPassive: Slowly regenerate health over time\nPassive: Maximizes visibility in dark areas",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/13.png"
+    },
+    {
+        "Index": 14,
+        "Name": "A Repulsing Shield Generator", 
+        "Type": 0,
+        "Description": "Standard issue Multiverse Corps advanced force field technology.\nActivate: Generate a force field at the target location for 5 seconds (15 second cooldown)\nPassive: Personal rebounding shield",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/14.png"
+    },
+    {
+        "Index": 15,
+        "Name": "A Higgs Field Amplifier",
+        "Type": 1,
+        "Description": "Experimental higgs field altering technology, handle with caution!\nActivate: Generate a temporary black hole at the target location for 4 seconds (12 second cooldown)\nPassive: Reduce knockback applied to the player by a factor of 4",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/15.png"
+    },
+    {
+        "Index": 16,
+        "Name": "A Gravitronic Nullifier", 
+        "Type": 0,
+        "Description": "Improves mobility by allowing the user to reverse the effects of gravity.\nActivate: Reverse the effects of gravity for .25 seconds (12 second cooldown)",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/16.png"
+    },
+    {
+        "Index": 17,
+        "Name": "Up-Link", 
+        "Type": 0,
+        "Description": "A direct data feed, allows for tracking allies, and treasure, and reveals stealthed players.\nActivate: Reveal stealthed players for 15 seconds (30 second cooldown)\nPassive: Reveals the entire map on the map screen and allows for tracking allies, enemies and treasure on the minimap\nPassive: Increase the area of effect of your incantations by 1 on all sides.",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/17.png"
+    },
+    {
+        "Index": 18,
+        "Name": "Blast Amulet", 
+        "Type": 1,
+        "Description": "Protects the player from physical damage, with emphasis on explosive damage.\nActivate: Ignore all damage caused by explosions for 10 seconds (40 second cooldown)\nPassive: Reduces all damage by 20%",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/18.png"
+    },
+    {
+        "Index": 19,
+        "Name": "Protection Amulet", 
+        "Type": 1,
+        "Description": "Artifact #19 - Protection Amulet (Eldritch)\nProtects the player from physical damage.\nActivate: Ignore all physical damage for 10 seconds (40 second cooldown)\nPassive: Reduces all damage by 20%",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/19.png"
+    },
+    {
+        "Index": 20,
+        "Name": "Trauma Kit", 
+        "Type": 0,
+        "Description": "Artifact #20 - Trauma Kit (Technology)\nHeals all injuries caused by battle.\nActivate: Heal to full health (60 second cooldown)\nPassive: Total health increased by 2",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/20.png"
+    },
+    {
+        "Index": 21,
+        "Name": "Inceptium Powered AP", 
+        "Type": 2,
+        "Description": "Artifact #21 - Inceptium Powered AP (Inceptium)\nAn autonomous peripheral weapon powered by the luminescent green metal, inceptium.\nActivate: Position the AP\nPassive: Fires a concentrated inceptium projectile at the target location\nPassive: Slowly regenerate health over time",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/21.png"
+    },
+    {
+        "Index": 22,
+        "Name": "Antiverse AP", 
+        "Type": 1,
+        "Description": "An autonomous peripheral weapon comprised of unknown anti-substances.\nActivate: Position the AP\nPassive: Fires a powerful burst of destructive energy at the target location",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/22.png"
+    },
+    {
+        "Index": 23,
+        "Name": "Hypertronic AP",
+        "Type": 0,
+        "Description": "An autonomous peripheral weapon powered by hyper dimensional components.\nActivate: Position the AP\nPassive: Fires a concentrated hyperdimensional beam, direct hits are more explosive than other beams",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/23.png"
+    },
+    {
+        "Index": 24,
+        "Name": "Laser AP",
+        "Type": 0,
+        "Description": "An autonomous peripheral weapon armed with a high powered laser.\nActivate: Position the AP\nPassive: Rapidly fires a powerful cutting laser beam at the target",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/24.png"
+    },
+    {
+        "Index": 25,
+        "Name": "Refractive Field Generator", 
+        "Type": 0,
+        "Description": "Generates a refactive field around the user, reducing beam weapon damage substantially.\nActivate: Nullifies all beam damage for 10 seconds (40 second cooldown)\nPassive: Reduces all beam damage by 50%\nPassive: Increases maximum health by 2\nPassive: Increase the area of effect of your incantations by 1 on all sides.",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/25.png"
+    },
+    {
+        "Index": 26,
+        "Name": "Singularity Beam", 
+        "Type": 0,
+        "Description": "An immensely destructive weapon of incredible power.\nActivate: Fires a beam that inflicts massive damage at the target location (30 second cooldown)",
+        "Image": "https://inventaverse.com/js/game/images/objects/triggers/26.png"
+    }
+]
