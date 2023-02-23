@@ -10,7 +10,7 @@ class UsersApi {
         'https://faas-sfo3-7872a1dd.doserverless.co/api/v1/web/fn-e0a7786b-ff1f-4c30-a9cb-ee93e1271573/Inventaverse/updateUser');
 
     if (userData.unlockAllArtifacts) {
-      userData.userProfile.possessions.artifacts = [
+      userData.userProfile.possessions.owned = [
         1,
         2,
         3,
