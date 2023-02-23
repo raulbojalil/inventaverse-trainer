@@ -1,6 +1,6 @@
 # Inventaverse trainer
 
-This is an easy-to-use PWA for quickly unlocking artifacts, fighters and more in ([Inventaverse](https://inventaverse.com/))!
+This is an easy-to-use PWA for quickly unlocking artifacts, fighters and more in [Inventaverse](https://inventaverse.com/)! You can also use this to quickly switch your equipped artifacts.
 
 ## Getting Started
 
