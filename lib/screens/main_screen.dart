@@ -48,7 +48,10 @@ class _MainScreenState extends State<MainScreen> {
               fleet: [],
               history: [],
               mazes: [],
-              puzzlesA: [],
+              puzzles: [],
+              campaign: [],
+              loadouts: [],
+              sets: [],
               stats: Stats(c: 0, d: 0, e: 0, k: 0, r: 0, t: 0, w: 0)),
           profilePicture: -1));
 
@@ -167,6 +170,7 @@ class _MainScreenState extends State<MainScreen> {
                       );
                     });
               } catch (e) {
+                print(e);
                 js.context.callMethod('alert', [
                   "An error has occurred, make sure your cookie and userId are correct. Or maybe just try again."
                 ]);
