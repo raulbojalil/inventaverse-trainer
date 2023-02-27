@@ -1,6 +1,4 @@
-import 'dart:convert';
 import 'dart:core';
-import 'dart:html';
 
 import 'package:inventaverse_trainer/models/stats.dart';
 import 'package:inventaverse_trainer/models/treasure.dart';
@@ -69,13 +67,13 @@ class UserPossessions {
         mentor = json["mentor"] ?? 1,
         treasure = Treasure.fromJson(json["treasure"] ?? "{ }"),
         progress = json["progress"] ?? 0,
-        mazes = json["mazes"] != null ? json["mazes"] : [],
-        fleet = json["fleet"] != null ? json["fleet"] : [],
-        loadouts = json["loadouts"] != null ? json["loadouts"] : [],
-        puzzles = json["puzzles"] != null ? json["puzzles"] : [],
-        history = json["history"] != null ? json["history"] : [],
-        campaign = json["campaign"] != null ? json["campaign"] : [],
-        sets = json["sets"] != null ? json["sets"] : [],
+        mazes = json["mazes"] ?? [],
+        fleet = json["fleet"] ?? [],
+        loadouts = json["loadouts"] ?? [],
+        puzzles = json["puzzles"] ?? [],
+        history = json["history"] ?? [],
+        campaign = json["campaign"] ?? [],
+        sets = json["sets"] ?? [],
         stats = Stats.fromJson(json["stats"]);
 
   Map<String, dynamic> toJson() {

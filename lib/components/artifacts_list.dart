@@ -4,34 +4,33 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../constants.dart';
 
-import 'dart:js' as js;
-
 import '../models/user_data.dart';
 
 class ArtifactDescription {
-  final int Index;
-  final String Name;
-  final String Type;
-  final String Description;
-  final String Image;
+  final int index;
+  final String name;
+  final String type;
+  final String description;
+  final String image;
 
   ArtifactDescription(
-      {required this.Index,
-      required this.Name,
-      required this.Type,
-      required this.Description,
-      required this.Image});
+      {required this.index,
+      required this.name,
+      required this.type,
+      required this.description,
+      required this.image});
 }
 
 class ArtifactsList extends StatefulWidget {
   final UserData userData;
   final Function onChange;
 
+  // ignore: use_key_in_widget_constructors
   const ArtifactsList({required this.userData, required this.onChange});
 
   @override
+  // ignore: no_logic_in_create_state
   State<ArtifactsList> createState() =>
-      // ignore: no_logic_in_create_state
       _ArtifactsListState(userData: userData, onChange: onChange);
 }
 
@@ -51,11 +50,11 @@ class _ArtifactsListState extends State<ArtifactsList> {
     );
 
     var list = json.decode(rawJson).map((x) => ArtifactDescription(
-          Index: int.parse(x["Index"]?.toString() ?? "0"),
-          Name: x["Name"]?.toString() ?? "",
-          Type: x["Type"]?.toString() ?? "",
-          Description: x["Description"]?.toString() ?? "",
-          Image: x["Image"]?.toString() ?? "",
+          index: int.parse(x["Index"]?.toString() ?? "0"),
+          name: x["Name"]?.toString() ?? "",
+          type: x["Type"]?.toString() ?? "",
+          description: x["Description"]?.toString() ?? "",
+          image: x["Image"]?.toString() ?? "",
         ));
 
     final artifacts = List<ArtifactDescription>.from(list);
@@ -82,12 +81,12 @@ class _ArtifactsListState extends State<ArtifactsList> {
                 children: [
                   for (var item in _artifacts)
                     ListTile(
-                        title: Text(item.Name),
-                        subtitle: Text(item.Description),
+                        title: Text(item.name),
+                        subtitle: Text(item.description),
                         isThreeLine: true,
                         leading: Checkbox(
                           value: userData.userProfile.possessions.artifacts
-                              .contains(item.Index),
+                              .contains(item.index),
                           onChanged: (checked) {
                             if (checked ?? false) {
                               if (userData.userProfile.possessions.artifacts
@@ -97,17 +96,17 @@ class _ArtifactsListState extends State<ArtifactsList> {
                                     .removeAt(0);
                               }
                               userData.userProfile.possessions.artifacts
-                                  .add(item.Index);
+                                  .add(item.index);
                             } else {
                               userData.userProfile.possessions.artifacts
-                                  .remove(item.Index);
+                                  .remove(item.index);
                             }
 
                             onChange(userData);
                           },
                         ),
                         trailing: Image.network(
-                          item.Image,
+                          item.image,
                           scale: 0.2,
                         )),
                 ],

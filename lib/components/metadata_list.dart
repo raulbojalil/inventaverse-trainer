@@ -1,12 +1,6 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:inventaverse_trainer/api/users.dart';
 import 'package:inventaverse_trainer/models/user_data.dart';
 import '../constants.dart';
-
-import 'dart:js' as js;
 
 class MetadataListItem extends StatelessWidget {
   final String title;
@@ -78,6 +72,7 @@ class MetadataList extends StatefulWidget {
   final UserData userData;
   final Function onChange;
 
+  // ignore: use_key_in_widget_constructors
   const MetadataList({required this.userData, required this.onChange});
 
   @override
@@ -112,21 +107,6 @@ class _MetadataListState extends State<MetadataList> {
                     subtitle: Text(
                         "${userData.userProfile.displayName}, Local ID: ${userData.localId}, ID: ${userData.userId}"),
                   ),
-                  // const ListTile(
-                  //   isThreeLine: true,
-                  //   title: Text("User ID"),
-                  //   subtitle: Text(
-                  //       "Developer tools -> Network tab -> Go to your homeworld -> Filter by 'isHome' -> Copy the id from the URL of the api/User/XXXXXXXXXXXX?isHome=true endpoint"),
-                  // ),
-                  // ListTile(
-                  //   title: TextFormField(
-                  //       decoration: InputDecoration(hintText: "Paste it here"),
-                  //       initialValue: userData.userId,
-                  //       onChanged: (text) {
-                  //         userData.userId = text;
-                  //         onChange(userData);
-                  //       }),
-                  // ),
                   const ListTile(
                     isThreeLine: true,
                     title: Text("Cookie"),
@@ -135,7 +115,8 @@ class _MetadataListState extends State<MetadataList> {
                   ),
                   ListTile(
                     title: TextFormField(
-                        decoration: InputDecoration(hintText: "Paste it here"),
+                        decoration:
+                            const InputDecoration(hintText: "Paste it here"),
                         initialValue: userData.cookie,
                         onChanged: (text) {
                           userData.cookie = text;
@@ -244,7 +225,7 @@ class _MetadataListState extends State<MetadataList> {
                       onChange(userData);
                     },
                   ),
-                  ListTile(
+                  const ListTile(
                     title: Text("Equipped artifacts"),
                     isThreeLine: true,
                     subtitle: Text(
@@ -252,23 +233,23 @@ class _MetadataListState extends State<MetadataList> {
                   ),
                   Row(
                     children: [
-                      userData.userProfile.possessions.artifacts.length > 0
+                      userData.userProfile.possessions.artifacts.isNotEmpty
                           ? Image.network(
                               "https://inventaverse.com/js/game/images/objects/triggers/${userData.userProfile.possessions.artifacts[0]}.png",
                               scale: 0.2)
-                          : Text(""),
-                      SizedBox(width: 10),
+                          : const Text(""),
+                      const SizedBox(width: 10),
                       userData.userProfile.possessions.artifacts.length > 1
                           ? Image.network(
                               "https://inventaverse.com/js/game/images/objects/triggers/${userData.userProfile.possessions.artifacts[1]}.png",
                               scale: 0.2)
-                          : Text(""),
-                      SizedBox(width: 10),
+                          : const Text(""),
+                      const SizedBox(width: 10),
                       userData.userProfile.possessions.artifacts.length > 2
                           ? Image.network(
                               "https://inventaverse.com/js/game/images/objects/triggers/${userData.userProfile.possessions.artifacts[2]}.png",
                               scale: 0.2)
-                          : Text(""),
+                          : const Text(""),
                     ],
                   ),
                   const ListTile(
@@ -281,15 +262,13 @@ class _MetadataListState extends State<MetadataList> {
                     title: TextFormField(
                         keyboardType: TextInputType.multiline,
                         maxLines: null, // <-- SEE HERE
-                        initialValue: userData.userProfile.possessions
-                                    .incantations.length >
-                                0
+                        initialValue: userData
+                                .userProfile.possessions.incantations.isNotEmpty
                             ? userData.userProfile.possessions.incantations[0]
                             : "",
                         onChanged: (text) {
-                          if (userData
-                                  .userProfile.possessions.incantations.length >
-                              0) {
+                          if (userData.userProfile.possessions.incantations
+                              .isNotEmpty) {
                             userData.userProfile.possessions.incantations[0] =
                                 text;
                           } else {
@@ -299,7 +278,6 @@ class _MetadataListState extends State<MetadataList> {
                           onChange(userData);
                         }),
                   ),
-
                   const ListTile(
                     isThreeLine: true,
                     title: Text("F Incantation"),

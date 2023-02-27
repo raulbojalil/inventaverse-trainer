@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:inventaverse_trainer/models/user_profile.dart';
 
 class UserData {

@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: primaryBgColor,
         canvasColor: secondaryColor,
       ),
-      home: MyHomePage(),
+      home: const MyHomePage(),
     );
   }
 }
